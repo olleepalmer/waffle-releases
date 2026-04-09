@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Waffle Updates</title>
+    <link>https://waffle.baby</link>
+    <description>Waffle update feed</description>
+    <language>en</language>
+  </channel>
+</rss>
