@@ -5,5 +5,15 @@
     <link>https://waffle.baby</link>
     <description>Waffle update feed</description>
     <language>en</language>
+    <item>
+      <title>Version 0.1.0</title>
+      <sparkle:version>202604101628</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <pubDate>Fri, 10 Apr 2026 16:29:04 +1000</pubDate>
+      <enclosure url="https://github.com/olleepalmer/waffle-releases/releases/download/v0.1.0/Waffle-0.1.0.zip"
+                 sparkle:edSignature="d3ctqrrp5FEGD9yYK33m22OOUsNMCw+bt9zOeYfo69EgQkP+Jx1t521tdYb1xrC75nDzRYyyxVN4QtZ+W1mNCA=="
+                 length="3158040"
+                 type="application/octet-stream"/>
+    </item>
   </channel>
 </rss>
