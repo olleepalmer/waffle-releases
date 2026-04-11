@@ -6,6 +6,16 @@
     <description>Waffle update feed</description>
     <language>en</language>
     <item>
+      <title>Version 0.1.1</title>
+      <sparkle:version>202604112142</sparkle:version>
+      <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+      <pubDate>Sat, 11 Apr 2026 21:43:14 +1000</pubDate>
+      <enclosure url="https://github.com/olleepalmer/waffle-releases/releases/download/v0.1.1/Waffle-0.1.1.zip"
+                 sparkle:edSignature="HT0v/OWweIZGlBtzAgC327wUc4/YXpV/zTsCJFY8rMMl6SxIpvdXpAv5AzkxwfyqZu5+lcnCaRId7tVNQRc8Bg=="
+                 length="3154470"
+                 type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Version 0.1.0</title>
       <sparkle:version>202604101628</sparkle:version>
       <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
