@@ -25,5 +25,48 @@
                  length="3158040"
                  type="application/octet-stream"/>
     </item>
+    <item>
+      <title>Version 0.1.2</title>
+      <link>https://waffle.baby</link>
+      <sparkle:version>202604142225</sparkle:version>
+      <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+      <description sparkle:format="markdown"><![CDATA[
+# Waffle v0.1.2
+
+## New features
+
+- **Window rearrangement** — drag sessions to reorder them in the grid, or use `Cmd+Shift+Arrow` for keyboard reordering.
+- **Focus Follows Mouse (optional)** — enable it in Settings > General > Interaction to make the hovered grid terminal active for keyboard input. The active pane styling follows the hovered terminal, but Waffle will not steal focus from in-pane text fields like search.
+- **A more useful Help menu** — keyboard shortcuts now live in a dedicated panel with examples, and Feedback & Bug Reports is one click away.
+
+## Performance improvements
+
+Waffle feels faster across the board, with quicker session startup, smoother rendering during heavy output, and cleaner closes.
+
+- **Instant new sessions** — shell opens first, metadata catches up.
+- **Smoother heavy output** — no more UI stalls during noisy commands.
+- **Snappier session close** — background worktree checks, prompts still appear.
+
+
+## Polish & fixes
+
+- **Fixed scrolling in Copilot** — terminal mouse-scroll events now pass through correctly in Copilot sessions. Thanks Rick H for reporting it.
+- **Fixed accidental window loss** — addressed a bug that could make terminal windows close unexpectedly or disappear from the grid.
+- **Unfocused terminals no longer show a cursor** — only the active terminal shows the caret, which reduces visual noise in multi-pane grids.
+- **Grid session cap now fails cleanly** — when the grid is full, Waffle shows a friendly alert instead of packing in unusably tiny terminals.
+- **Fixed duplicate Window menu items**.
+- **Fixed the close button for sessions outside git repos**.
+- **Improved terminal selection contrast on dark themes**.
+- **Final worktree sessions now clean up safely** — closing the last worktree backed session no longer risks quitting Waffle before the keep/remove prompt appears.
+- **No more orphan worktrees when the grid is full** — if Waffle cannot open a new worktree session, it now refuses or rolls back the worktree creation instead of leaving an unattached branch/worktree on disk.
+- **Grid capacity is enforced correctly from maximised mode** — creating a session from a maximised terminal now respects the real restored grid size.
+]]></description>
+      <sparkle:fullReleaseNotesLink>https://github.com/olleepalmer/waffle-releases/releases/tag/v0.1.2</sparkle:fullReleaseNotesLink>
+      <pubDate>Tue, 14 Apr 2026 22:26:21 +1000</pubDate>
+      <enclosure url="https://github.com/olleepalmer/waffle-releases/releases/download/v0.1.2/Waffle-0.1.2.zip"
+                 sparkle:edSignature="wWSfvmcjKjvFi4H8VveAFOjkVfUsOAj8ILv3qr7ND5qbqPBlRozwXPTVqQNGDIkp5AK51nni85vqv29ol3yLAw=="
+                 length="3933868"
+                 type="application/octet-stream"/>
+    </item>
   </channel>
 </rss>
