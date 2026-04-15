@@ -68,5 +68,35 @@ Waffle feels faster across the board, with quicker session startup, smoother ren
                  length="3933868"
                  type="application/octet-stream"/>
     </item>
+    <item>
+      <title>Version 0.1.3</title>
+      <link>https://waffle.baby</link>
+      <sparkle:version>202604151454</sparkle:version>
+      <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
+      <description sparkle:format="markdown"><![CDATA[
+## Stability & reliability
+
+- **Fixed pending-close warning** — ungrouped sessions now correctly show the pending-close warning before closing.
+- **Eliminated data race** — fixed a race condition in git refresh scheduling that could cause intermittent crashes.
+- **Fixed zero-column PTY resize** — reject zero-column resize during view re-creation, preventing terminal corruption.
+- **Replaced unsafe MainActor calls** — eliminated remaining `MainActor.assumeIsolated` usage for safer concurrency.
+
+## Crash reporting improvements
+
+- **Better crash diagnostics** — added dSYM upload to Sentry in the release pipeline for symbolicated crash reports.
+- **Dev builds excluded from Sentry** — crash reporting now only runs in release builds to reduce noise.
+- **Added AppleEvents permission** — added `NSAppleEventsUsageDescription` to prevent permission prompts.
+
+## Grid layout fix
+
+- **No more blank terminal flash** — replaced `LazyVGrid` with a non-lazy custom `Layout`, eliminating the brief blank flash when terminals appear in the grid.
+]]></description>
+      <sparkle:fullReleaseNotesLink>https://github.com/olleepalmer/waffle-releases/releases/tag/v0.1.3</sparkle:fullReleaseNotesLink>
+      <pubDate>Tue, 15 Apr 2026 10:50:17 +1000</pubDate>
+      <enclosure url="https://github.com/olleepalmer/waffle-releases/releases/download/v0.1.3/Waffle-0.1.3.zip"
+                 sparkle:edSignature="jotrB9AMKOyh3sknK0u5c1OOLL0/nLcXByovzlJgNdOAz0P/s7HcTH1YEnT/fabY+9+UZLJsl0abIWvenJ1gDA=="
+                 length="4008488"
+                 type="application/octet-stream"/>
+    </item>
   </channel>
 </rss>
