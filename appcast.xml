@@ -98,5 +98,33 @@ Waffle feels faster across the board, with quicker session startup, smoother ren
                  length="4008488"
                  type="application/octet-stream"/>
     </item>
+    <item>
+      <title>Version 0.1.4</title>
+      <link>https://waffle.baby</link>
+      <sparkle:version>202604171122</sparkle:version>
+      <sparkle:shortVersionString>0.1.4</sparkle:shortVersionString>
+      <description sparkle:format="markdown"><![CDATA[
+# Waffle v0.1.4
+
+## Fewer hangs
+
+- Quit no longer freezes when closing lots of sessions
+- Creating or cleaning up worktrees runs in the background — the grid stays responsive
+- Directory changes in busy repos don't stutter the UI
+- Fixed a hang around the update checker at app launch
+- Theme import (Preferences → Appearance → +) no longer blocks the window
+
+## Polish & fixes
+
+- ANSI colour backgrounds now respect a minimum contrast — dark-on-dark text stays readable
+- Auto-update reliability: fixed appcast ordering and the stats proxy
+]]></description>
+      <sparkle:fullReleaseNotesLink>https://github.com/olleepalmer/waffle-releases/releases/tag/v0.1.4</sparkle:fullReleaseNotesLink>
+      <pubDate>Fri, 17 Apr 2026 11:23:45 +1000</pubDate>
+      <enclosure url="https://github.com/olleepalmer/waffle-releases/releases/download/v0.1.4/Waffle-0.1.4.zip"
+                 sparkle:edSignature="sYn3AejSIfTU19BE837XqiCucIrMBDdx/Im8WTUtsfNVvTLrvGwR+0e7RtE9Qa0V6xadNbwAp6nP+OPsfkrwCQ=="
+                 length="4022493"
+                 type="application/octet-stream"/>
+    </item>
   </channel>
 </rss>
