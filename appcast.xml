@@ -144,7 +144,7 @@ Waffle feels faster across the board, with quicker session startup, smoother ren
 
 - Squashed a Sparkle-related freezing bug on launch. Thanks to JYBS for the report.
 - Updates notice themselves. Waffle now checks for new versions in the background instead of only when you open the menu.
-- Fixed a bug where ⌘V, ⌘C, and ⌘A silently did nothing when the terminal wasn't the active first responder. They now route straight to the focused session. (Thanks Corey!)
+- Fixed a focus bug where paste didn't work — ⌘V (and ⌘C, ⌘A) silently did nothing when the terminal wasn't the active first responder. They now route straight to the focused session. (Thanks Michael and Corey!)
 - Typing stays instant even when tools flood the terminal with title updates. Shells (powerlevel10k, oh-my-zsh), vim, tmux, Claude Code — they all re-emit titles on every prompt redraw. Waffle dedupes the flood at the source so keystrokes never wait behind them.
 - Claude Code's spinner glyphs (✳ ✻ ✽ ∗ ✳️) no longer cycle through the session header. Waffle strips the leading spinner so the real title underneath sits still.
 - Session header typography tuned — the repo name now reads as the headline with the branch as a quieter modifier, instead of the other way round.
