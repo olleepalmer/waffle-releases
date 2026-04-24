@@ -126,5 +126,41 @@ Waffle feels faster across the board, with quicker session startup, smoother ren
                  length="4022493"
                  type="application/octet-stream"/>
     </item>
+    <item>
+      <title>Version 0.2.0</title>
+      <link>https://waffle.baby</link>
+      <sparkle:version>202604241817</sparkle:version>
+      <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+      <description sparkle:format="markdown"><![CDATA[
+# Waffle v0.2.0
+
+## What's new
+
+- **Flip between sessions without leaving fullscreen.** Maximised a session and want to check another? Hit ⌘] or ⌘[ to step through the group — no more esc, click, maximise again. Regular group-switching still works when nothing's maximised.
+- **Session headers show terminal titles.** Claude Code names your sessions (`cherry-pick-animated-about` and the like), vim shows the filename you're editing, your shell shows the current directory — Waffle now picks all of that up via OSC 0/2 and shows it in the header chip. Manually set labels and bead IDs still win if set.
+- **Mic access works now.** Claude Code's voice mode, Wispr Flow, macOS dictation — anything that wants to record from a terminal can finally ask for permission instead of getting silently denied.
+
+## Fixes & polish
+
+- Squashed a Sparkle-related freezing bug on launch. Thanks to JYBS for the report.
+- Updates notice themselves. Waffle now checks for new versions in the background instead of only when you open the menu.
+- Fixed a bug where ⌘V, ⌘C, and ⌘A silently did nothing when the terminal wasn't the active first responder. They now route straight to the focused session. (Thanks Corey!)
+- Typing stays instant even when tools flood the terminal with title updates. Shells (powerlevel10k, oh-my-zsh), vim, tmux, Claude Code — they all re-emit titles on every prompt redraw. Waffle dedupes the flood at the source so keystrokes never wait behind them.
+- Claude Code's spinner glyphs (✳ ✻ ✽ ∗ ✳️) no longer cycle through the session header. Waffle strips the leading spinner so the real title underneath sits still.
+- Session header typography tuned — the repo name now reads as the headline with the branch as a quieter modifier, instead of the other way round.
+- Terminal search shows real counts now. Previously it said "0 results" even when the matches were right there — now "N of M" tracks what you're actually looking at.
+- ⌘+ and ⌘- zoom the font again, and the size sticks across launches.
+- Maximising and cycling between maximised sessions are smooth now — no blank flash, no reflow.
+- Window resizing no longer scrambles the terminal. Waffle holds still while macOS animates, then shows the clean result.
+- Pick any colour for a group, and the active tab always pops. If the fill gets too close to the toolbar chrome, Waffle frames it with a crisp outline — works in light and dark.
+- Window size and position survive restart reliably. SwiftUI's frame autosave no longer fights `workspace.json` for the last word.
+]]></description>
+      <sparkle:fullReleaseNotesLink>https://github.com/olleepalmer/waffle-releases/releases/tag/v0.2.0</sparkle:fullReleaseNotesLink>
+      <pubDate>Fri, 24 Apr 2026 18:18:07 +1000</pubDate>
+      <enclosure url="https://github.com/olleepalmer/waffle-releases/releases/download/v0.2.0/Waffle-0.2.0.zip"
+                 sparkle:edSignature="IPoktVtB6erEAllN157TgRRBfwiVQTAkXA/yWbDeEH79TSCWw0W3+pn9pXeC7ts/1rhX8JL7DgvpD6qFlhCmCg=="
+                 length="4063725"
+                 type="application/octet-stream"/>
+    </item>
   </channel>
 </rss>
