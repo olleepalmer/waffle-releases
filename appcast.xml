@@ -162,5 +162,30 @@ Waffle feels faster across the board, with quicker session startup, smoother ren
                  length="4063725"
                  type="application/octet-stream"/>
     </item>
+    <item>
+      <title>Version 0.2.1</title>
+      <link>https://waffle.baby</link>
+      <sparkle:version>202605220735</sparkle:version>
+      <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+      <description sparkle:format="markdown"><![CDATA[
+# Waffle v0.2.1
+
+## Goodbye, mystery two-second freeze.
+
+On busy sessions, the terminal sometimes (often?) locked up for two seconds at a time. Turns out we were re-rendering every row of text on every redraw — which, yeah, adds up. Now it only re-renders rows that actually changed. Much better.
+
+## Polish & fixes
+
+- Switching between project groups no longer stutters. Smooth as.
+- Links that wrap onto a second row are properly underlined, and ⌘+click works on either row 💅
+- ⌘C, ⌘V and ⌘A in the terminal can't be stolen by your other keybindings.
+]]></description>
+      <sparkle:fullReleaseNotesLink>https://github.com/olleepalmer/waffle-releases/releases/tag/v0.2.1</sparkle:fullReleaseNotesLink>
+      <pubDate>Fri, 22 May 2026 07:36:50 +1000</pubDate>
+      <enclosure url="https://github.com/olleepalmer/waffle-releases/releases/download/v0.2.1/Waffle-0.2.1.zip"
+                 sparkle:edSignature="tK8PijWCsspWnkCTQhPCzQ+k4wnSdA0ir4WsAT1dIxyp1GAWnBagQxxWCvvO3k/IhoN3tE5wE0Ix2D0FPJ7zDQ=="
+                 length="4083521"
+                 type="application/octet-stream"/>
+    </item>
   </channel>
 </rss>
