@@ -195,10 +195,6 @@ On busy sessions, the terminal sometimes (often?) locked up for two seconds at a
       <description sparkle:format="markdown"><![CDATA[
 # Waffle v0.3.0
 
-## Waffle is now open source 🧇
-
-The whole app is on GitHub, MIT-licensed — [github.com/olleepalmer/waffle](https://github.com/olleepalmer/waffle). Poke around, build it yourself, open an issue, send a PR. This is the thing I built because tmux never fit my head; now you can see exactly how it works.
-
 ## The terminal keeps up now, no matter how much it's printing
 
 Flood the screen — a big build, `git log`, a chatty test run — and the app stays smooth instead of stalling. Scrolling, typing, and switching sessions don't wait behind the firehose anymore. (Under the hood: output is parsed off the main thread now.)
