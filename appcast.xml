@@ -187,5 +187,45 @@ On busy sessions, the terminal sometimes (often?) locked up for two seconds at a
                  length="4083521"
                  type="application/octet-stream"/>
     </item>
+    <item>
+      <title>Version 0.3.0</title>
+      <link>https://waffle.baby</link>
+      <sparkle:version>202607202206</sparkle:version>
+      <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+      <description sparkle:format="markdown"><![CDATA[
+# Waffle v0.3.0
+
+## Waffle is now open source 🧇
+
+The whole app is on GitHub, MIT-licensed — [github.com/olleepalmer/waffle](https://github.com/olleepalmer/waffle). Poke around, build it yourself, open an issue, send a PR. This is the thing I built because tmux never fit my head; now you can see exactly how it works.
+
+## The terminal keeps up now, no matter how much it's printing
+
+Flood the screen — a big build, `git log`, a chatty test run — and the app stays smooth instead of stalling. Scrolling, typing, and switching sessions don't wait behind the firehose anymore. (Under the hood: output is parsed off the main thread now.)
+
+## Resizing behaves itself
+
+A stack of reflow bugs are gone. Resizing the window or the grid used to leave gaps, drop wrapped lines, or scramble text — now the terminal reflows cleanly, the cursor stays anchored to its content, and wide/emoji glyphs survive the round-trip.
+
+- Narrowing the window no longer garbles wrapped output or crashes on short/blank rows
+- Text no longer echoes into a wedged state under heavy input
+- Wrapping stays correct after the grid shrinks
+
+## New features
+
+- New terminals join whichever repo you're focused on, and the view follows the focused terminal — less hunting around after you spin one up
+
+## Polish & fixes
+
+- Maximise a cell and its hidden siblings hold their place — no reshuffle when you come back
+- The app menu bar stays yours (SwiftUI was quietly swapping it back)
+]]></description>
+      <sparkle:fullReleaseNotesLink>https://github.com/olleepalmer/waffle-releases/releases/tag/v0.3.0</sparkle:fullReleaseNotesLink>
+      <pubDate>Mon, 20 Jul 2026 22:06:59 +1000</pubDate>
+      <enclosure url="https://github.com/olleepalmer/waffle-releases/releases/download/v0.3.0/Waffle-0.3.0.zip"
+                 sparkle:edSignature="m5MtrVJzsB6ImKK1rdgs2U7Gru5nn0p14nfsIGTkXMkz8KEbi86k5eobuLH9dsaof9n9707W33fg6BvDkyDcDw=="
+                 length="4077085"
+                 type="application/octet-stream"/>
+    </item>
   </channel>
 </rss>
